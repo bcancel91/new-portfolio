@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+h1.fancy, h1.fancy2{
+    color: black;
+    font-size: 3rem;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    line-height: 30vh;
+}
+.qoute{
+    color: black;
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 200px;
+}
+span {
+    opacity: 0;
+    transition: all 1.5s ease;
+} 
+span.fade{
+    opacity: 6;
+}
