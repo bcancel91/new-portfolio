@@ -1,0 +1,22 @@
+.nav-item {
+color: black;
+font-size: 3rem;
+font-family: "Permanent Marker", cursive;
+text-align: center;
+line-height: 30vh;
+text-shadow: 2.3px 6.2px black;
+}
+#nav1:hover, #nav2:hover, #nav3:hover{
+    color: red;
+    text-shadow: 2.3px 20.2px black;
+
+}
+h4 {
+    font-size: 2rem;
+    
+  }
+  p.aboutMe {
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  
