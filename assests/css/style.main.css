@@ -7,7 +7,7 @@ line-height: 30vh;
 text-shadow: 2.3px 6.2px black;
 }
 #nav1:hover, #nav2:hover, #nav3:hover{
-    color: red;
+    
     text-shadow: 2.3px 20.2px black;
 
 }
@@ -22,9 +22,10 @@ h4 {
   body {
     background: #e2e1e0;
     text-align: center;
+    background-color:#1A1919;text-align:center;
   }
   
-  .card {
+  /* .card {
     background: #fff;
     border-radius: 2px;
     display: inline-block;
@@ -32,9 +33,100 @@ h4 {
     margin: 1rem;
     position: relative;
     width: 300px;
-  }
+  } */
   
   .card-shadow {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
   
+
+  
+  /* Step 3: Set up keyframes to interpolate through variable weights */
+  @keyframes animate-type {
+    60% {
+      font-variation-settings: 'wght' 900;
+    }
+    
+    100% {
+      font-variation-settings: 'wght' 100;
+    }
+  }
+  
+  /* Step 4: apply the animation to our elements, make it infinite, scale up and down */
+  h1 {
+     font-weight: 100;
+     font-family: "Permanent Marker", cursive;
+     font-variation-settings: 'wght' 100;
+     animation: animate-type 4000ms infinite forwards;
+
+  }
+ 
+  
+  /* Step 5: style it how you want! */
+  
+  
+  @media screen and (min-width: 1080px) {
+    body {
+      /* font-size: 64px; */
+      
+    }
+  }
+  
+  h1 span > span:nth-child(odd) {
+    color: #542bff;
+  }
+  .padding {
+    padding-bottom: 2rem;
+  }
+  footer{
+    background-color: black !important;
+    color: #d5d5d5;
+    padding-top: 2rem;
+  }
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+  }
+
+  .abilities {
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+    color: lightgrey;
+  }
+.left{
+  display: flex;
+  justify-content: start;
+  margin-bottom: 0;
+  color: lightgray;
+  
+}
+.box{
+  border-style: outset;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* .marginLeft {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px
+} */
+
+.proPic {
+  border-radius: 10px;
+  border: dotted 7px;
+}
+
+
+  
+
+ 
+
+
+
+
+
+
+ 

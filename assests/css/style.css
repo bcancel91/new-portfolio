@@ -1,30 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Error: semicolons aren't allowed in the indented syntax.
+ *   ,
+ * 1 | $pure-white: hsla(0, 0%, 100%, 1); // #fff
+ *   |                                  ^
+ *   '
+ *   app.sass 1:34  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: semicolons aren't allowed in the indented syntax.\a   \2577 \a 1 \2502  $pure-white: hsla(0, 0%, 100%, 1); // #fff\a   \2502                                   ^\a   \2575 \a   app.sass 1:34  root stylesheet";
 }
-body {
-    background: white;
+.padding {
+  padding-bottom: 2rem;
 }
-h1.fancy, h1.fancy2{
-    color: black;
-    font-size: 3rem;
-    font-family: "Permanent Marker", cursive;
-    text-align: center;
-    line-height: 30vh;
+footer{
+  background-color: black !important;
+  color: #d5d5d5;
+  padding-top: 2rem;
 }
-.qoute{
-    color: black;
-    font-size: 2rem;
-    font-family: "Permanent Marker", cursive;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 200px;
-}
-span {
-    opacity: 0;
-    transition: all 1.5s ease;
-} 
-span.fade{
-    opacity: 6;
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
 }
